@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/lista"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Principal">
@@ -24,65 +24,89 @@
         android:id="@+id/buttonCRUDUser"
         android:layout_width="149dp"
         android:layout_height="87dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#7C3AED"
         android:text="CRUD Usuario"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.703"
+        app:layout_constraintHorizontal_bias="0.702"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="130dp"
-        android:layout_height="96dp"
-        android:layout_marginTop="272dp"
-        app:layout_constraintEnd_toStartOf="@+id/buttonCRUDUser"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/crudusuario" />
-
     <Button
-        android:id="@+id/buttonViewSensorData"
-        android:layout_width="149dp"
-        android:layout_height="87dp"
-        android:layout_marginTop="72dp"
-        android:text="Mostrar Datos Sensores"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.703"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonCRUDUser" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="149dp"
-        android:layout_height="87dp"
-        android:layout_marginTop="72dp"
+        android:id="@+id/buttonViewDesarrolladores"
+        android:layout_width="155dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="68dp"
+        android:backgroundTint="#1E88E5"
         android:text="Desarrolladores"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.725"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonViewSensorData" />
 
+    <Button
+        android:id="@+id/buttonViewSensorData"
+        android:layout_width="149dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="76dp"
+        android:backgroundTint="#00B894"
+        android:text="Mostrar Datos Sensores"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.702"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCRUDUser" />
+
+    <TextView
+        android:id="@+id/textFechaAhora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="130dp"
-        android:layout_height="96dp"
+        android:layout_width="116dp"
+        android:layout_height="90dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="68dp"
-        app:layout_constraintEnd_toStartOf="@+id/buttonViewSensorData"
-        app:layout_constraintHorizontal_bias="0.1"
+        android:layout_marginTop="312dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonCRUDUser"
+        app:layout_constraintHorizontal_bias="0.451"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        app:srcCompat="@drawable/sensores" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/crudusuario2" />
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="130dp"
-        android:layout_height="96dp"
-        android:layout_marginTop="68dp"
-        app:layout_constraintEnd_toStartOf="@+id/button3"
+        android:layout_width="116dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonViewSensorData"
         app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:srcCompat="@drawable/sensor" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="118dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonViewDesarrolladores"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
         app:srcCompat="@drawable/desarrolladores" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
